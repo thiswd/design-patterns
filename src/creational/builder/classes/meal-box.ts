@@ -8,6 +8,6 @@ export class MealBox implements MealCompositeProtocol {
   }
 
   add(...meal: MealCompositeProtocol[]): void {
-    meal.forEach((item) => this._children.push(item));
+    meal.forEach(item => this._children.push(item));
   }
 }
