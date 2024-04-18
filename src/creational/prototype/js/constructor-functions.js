@@ -17,13 +17,20 @@ const personPrototype = {
 Person.prototype = Object.create(personPrototype);
 Person.prototype.constructor = Person;
 
-function SubPerson(firstName, lastName, age) {
-  Person.call(this, firstName, lastName, age);
-  this.fromSubClass = 'OIE';
+// function SubPerson(firstName, lastName, age) {
+//   Person.call(this, firstName, lastName, age);
+//   this.fromSubClass = 'OIE';
+// }
+
+class SubPerson extends Person {
+  constructor(firstName, lastName, age) {
+    super(firstName, lastName, age);
+    this.fromSubClass = 'OIE';
+  }
 }
 
 SubPerson.prototype = Object.create(Person.prototype);
-SubPerson.prototype.constructor = SubPerson;
+// SubPerson.prototype.constructor = SubPerson;
 
 const person1 = new Person('João', 'Miranda', 30);
 console.log(person1);
