@@ -1,6 +1,6 @@
 import { VehicleFactory } from './vehicle-factory';
 import { Car } from '../vehicle/car';
-import { Vehicle } from '../vehicle/vehicle';
+import { Vehicle } from '../interfaces/vehicle';
 
 export class CarFactory extends VehicleFactory {
   getVehicle(vehicleName: string): Vehicle {

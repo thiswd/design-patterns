@@ -1,7 +1,7 @@
-import { Vehicle } from '../vehicle/vehicle';
 import { CarFactory } from '../factories/car-factory';
 import { BicycleFactory } from '../factories/bicycle-factory';
 import { randomNumbers } from '../utils/random-numbers';
+import { Vehicle } from '../interfaces/vehicle';
 
 export function randomCarAlgorithm(): Vehicle {
   const carFactory = new CarFactory();

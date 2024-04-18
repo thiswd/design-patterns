@@ -1,4 +1,4 @@
-import { Vehicle } from './vehicle';
+import { Vehicle } from "../interfaces/vehicle";
 
 export class Bicycle implements Vehicle {
   constructor(private name: string) {}
