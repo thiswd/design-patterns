@@ -1,6 +1,4 @@
-export interface Prototype {
-  clone(): Prototype;
-}
+import { Prototype } from '../interfaces/prototype';
 
 export class Person implements Prototype {
   public addresses: Address[] = [];
