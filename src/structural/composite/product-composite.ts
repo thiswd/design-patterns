@@ -24,7 +24,7 @@ export class ProductComposite extends ProductComponent {
   private children: ProductComponent[] = [];
 
   add(...products: ProductComponent[]): void {
-    products.forEach((product) => this.children.push(product));
+    products.forEach(product => this.children.push(product));
   }
 
   remove(product: ProductComponent): void {
