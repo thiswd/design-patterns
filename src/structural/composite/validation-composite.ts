@@ -37,7 +37,7 @@ export class ValidationComposite extends ValidationComponent {
   }
 
   add(...validations: ValidationComponent[]): void {
-    validations.forEach((validation) => this.children.push(validation));
+    validations.forEach(validation => this.children.push(validation));
   }
 }
 
