@@ -18,8 +18,7 @@ export class Radio implements DeviceImplementation {
   }
 
   setVolume(volume: number): void {
-    if (volume < 0) return;
-    if (volume > 100) return;
+    if (volume < 0 || volume > 100) return;
     this.volume = volume;
   }
 
