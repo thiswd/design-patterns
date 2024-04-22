@@ -2,6 +2,7 @@ import { DeliveryLocation } from './delivery-location';
 
 export type DeliveryLocationData = {
   readonly street: string;
+  readonly neighborhood: string;
   readonly city: string;
 };
 

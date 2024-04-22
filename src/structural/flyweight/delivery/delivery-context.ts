@@ -6,7 +6,8 @@ export const deliveryContext = function (
   number: string,
   street: string,
   city: string,
+  neighborhood: string,
 ): void {
-  const location = factory.makeLocation({ street, city });
+  const location = factory.makeLocation({ street, city, neighborhood });
   location.deliver(name, number);
 };
