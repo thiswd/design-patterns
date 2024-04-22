@@ -1,4 +1,4 @@
-import { MealBuilderProtocol } from "../interfaces/meal-builder-protocol";
+import { MealBuilderProtocol } from '../interfaces/meal-builder-protocol';
 
 export class Director {
   private _builder: MealBuilderProtocol | null = null;
@@ -8,7 +8,6 @@ export class Director {
   }
 
   buildMainDish(): void {
-    this._builder?.makeMeal();
-    this._builder?.makeBeverage();
+    this._builder?.makeMeal().makeBeverage();
   }
 }
