@@ -10,7 +10,7 @@ export class DeliveryFactory {
 
   private createId(data: DeliveryLocationData): string {
     return Object.values(data)
-      .map((item) => item.replace(/\s+/, '').toLocaleLowerCase())
+      .map((item) => item.replace(/\s+/g, '').toLocaleLowerCase())
       .join('_');
   }
 
