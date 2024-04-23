@@ -1,5 +1,5 @@
 import { ConcreteMemento } from './concrete-memento';
-import { Memento } from './memento';
+import { Memento } from './interfaces/memento';
 
 // Originator
 export class ImageEditor {

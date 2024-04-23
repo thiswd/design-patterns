@@ -1,5 +1,5 @@
 import { ImageEditor } from './image-editor';
-import { Memento } from './memento';
+import { Memento } from './interfaces/memento';
 
 export class ImageEditorBackupManager {
   private mementos: Memento[] = [];
