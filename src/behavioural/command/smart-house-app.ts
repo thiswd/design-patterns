@@ -8,10 +8,10 @@ export class SmartHouseApp {
   }
 
   executeCommand(key: string): void {
-    this.commands[key].execute();
+    this.commands[key]?.execute();
   }
 
   undoCommand(key: string): void {
-    this.commands[key].undo();
+    this.commands[key]?.undo();
   }
 }
