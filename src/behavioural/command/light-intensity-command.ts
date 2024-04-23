@@ -1,5 +1,5 @@
+import { SmartHouseCommand } from './interfaces/smart-house-command';
 import { SmartHouseLight } from './smart-house-light';
-import { SmartHouseCommand } from './smart-house-command';
 
 export class LightIntensityCommand implements SmartHouseCommand {
   constructor(private readonly light: SmartHouseLight) {}
