@@ -4,7 +4,7 @@ import { ManagerBudgetHandler } from './manager-budget-handler';
 import { DirectorBudgetHandler } from './director-budget-handler';
 import { CEOBudgetHandler } from './ceo-budget-handler';
 
-const customerBudget = new CustomerBudget(1001);
+const customerBudget = new CustomerBudget(49_999);
 
 const seller = new SellerBudgetHandler();
 seller
