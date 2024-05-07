@@ -84,7 +84,7 @@ const div1 = new DivObserver(makeDiv());
 
 input.subscribe(p1, p2, div1);
 
-input.element.addEventListener('keyup', function () {
+input.element.addEventListener('keyup', () => {
   input.notify();
 });
 
